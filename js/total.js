@@ -53,6 +53,19 @@ function otherInFoByid(id) {
     fetch(IdApiUrl)
     .then(response => response.json())
     .then(data => {
+        //게임모드 ----------------------------------------------
+        const mode = data[0].queueType
+        const userMode = document.getElementById("userMode")
+
+        userMode.innerText = mode
+        
+
+
+
+
+        //게임모드 ----------------------------------------------
+
+
         //소환사 티어 ----------------------------------------------
         const Tier = data[0].tier
         const userTier = document.getElementById("userTier")
@@ -108,6 +121,84 @@ function otherInFoByid(id) {
 
 
         //소환사 승률 ----------------------------------------------
+
+
+
+
+
+        //게임모드2----------------------------------------------
+        const mode2 = data[1].queueType
+        const userMode2 = document.getElementById("userMode2")
+
+        userMode2.innerText = mode2
+        
+
+
+
+
+        //게임모드2 ----------------------------------------------
+
+
+        //소환사 티어2 ----------------------------------------------
+        const Tier2 = data[1].tier
+        const userTier2 = document.getElementById("userTier2")
+
+        userTier2.innerText = Tier2
+
+        //소환사 티어2 ----------------------------------------------
+
+
+
+        //소환사 랭크2 ----------------------------------------------
+
+        const Rank2 = data[1].rank
+        const userRank2 = document.getElementById("userRank2")
+
+        userRank2.innerText = Rank2
+        
+
+        
+
+        //소환사 랭크2 ----------------------------------------------
+
+
+
+        //소환사 리그포인트2 ----------------------------------------------
+        const LeaguePoints2 = data[1].leaguePoints 
+        const userLp2 = document.getElementById("userLp2")
+
+        userLp2.innerText = `${LeaguePoints2}LP`
+        
+
+
+
+        //소환사 리그포인트2 ----------------------------------------------
+
+
+
+        //소환사 승패2 ----------------------------------------------
+        const Wins2 = data[1].wins
+        const Losses2 = data[1].losses
+        const userWin2 = document.getElementById("userWin2")
+        const userLoss2 = document.getElementById("userLoss2")
+
+        userWin2.innerText = `승:${Wins2}`
+        userLoss2.innerText = `패:${Losses2}`
+        //소환사 승패2 ----------------------------------------------
+
+
+        //소환사 승률2 ----------------------------------------------
+        const WinRate2 = Math.floor(Wins2 / (Wins2 + Losses2) * 100)
+        const userWinRate2 = document.getElementById("userWinRate2")
+
+        userWinRate2.innerText = `승률: ${WinRate2}%`
+        
+
+
+
+        //소환사 승률2 ----------------------------------------------
+
+        
     });
     
 }
