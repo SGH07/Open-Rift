@@ -5,25 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Open Rift Dev 21 10 10</title>
+    <link rel="stylesheet" href="style.css">
     <!--부트스크랩-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
     <!--부트스크랩-->
     
 </head>
 <body>
+    
 
-    <div id = "title">
-        <h1>Open Rift</h1>
-        <h5>리그 오브 레전드 전적 검색</h5>
+    <div id = "title" class="position-absolute top-50 start-50 translate-middle"> 
+        <sub>BETA</sub> <p class = "display-4">Open Rift</p>
+
     </div>
+
     <!--타이틀-->
 
 
-    <form id = "search">
-        <input type="text" id = "searchInput" maxlength="16" placeholder="전적을 검색할 닉네임을 입력해주세요" required>
-        <button>검색하기</button>
+    
+    <form id = "search" class="position-absolute bottom-0 start-50 translate-middle-x searchInput">
+        <input type="text" class="form-control" id = "searchInput exampleForm2" maxlength="16" placeholder="닉네임을 입력해주세요" required>
     </form>
     <!--검색창-->
+
+
+
+
+
+
+
 
 
     <script src="js/search.js"></script>
