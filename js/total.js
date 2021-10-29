@@ -1,4 +1,4 @@
-const API = "RGAPI-6381852e-e350-426b-8f5f-2f9935cb1e48"
+const API = "RGAPI-c1895e36-be70-4d57-92d3-ab45e434f22a"
 const username = getParameterByName("name")
 const NameApiUrl = `https://kr.api.riotgames.com/lol/summoner/v4/summoners/by-name/${username}?api_key=${API}`
 
