@@ -4,6 +4,10 @@ const NameApiUrl = `https://kr.api.riotgames.com/lol/summoner/v4/summoners/by-na
 
 
  
+
+
+alert("2021년 11월 10일 오후 10시 17분 기준 베타 DEV1이 종료되었으며 DEV2전까지는 서비스 이용이 불가능 할 수 있습니다")
+
 function summonerName() {
     const userName = document.getElementById("userName")
     userName.innerText = `소환사 이름:${username}`
